@@ -1,0 +1,9 @@
+.env
+*.secret
+x.secret
+solana.txt
+.omx/
+__pycache__/
+*.py[cod]
+*.pyo
+
