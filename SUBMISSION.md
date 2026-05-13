@@ -1,6 +1,6 @@
 # Birdeye Risk Radar Submission Draft
 
-Status: separate repository prepared locally; not pushed.
+Status: repository pushed; X/Superteam submission pending.
 
 Reason: Superteam should see the standalone project only, not the operating
 workspace that produced it. This packet contains the scanner, live evidence,
@@ -48,7 +48,7 @@ Birdeye Risk Radar
 
 Public project link:
 
-Blocked until the operator creates `tinybankroll/birdeye-risk-radar` and the local repository is pushed.
+https://github.com/tinybankroll/birdeye-risk-radar
 
 X progress post link:
 
@@ -72,18 +72,18 @@ loaded, no transaction was built, and no trade recommendation was emitted.
 
 ## X Post Draft
 
-Built Birdeye Risk Radar for the Birdeye Data Sprint 4: a read-only Solana
-token-risk scanner for small-bankroll operators.
+Built Birdeye Risk Radar for Birdeye Data Sprint 4: a read-only Solana
+token-risk scanner.
 
-It combines new listings, trending tokens, and market data, then refuses to
-recommend trades when token-security access is unavailable. Current live run:
-50 Birdeye API calls, 60 research-only token assessments, no wallet signing.
+Live run: 50 Birdeye API calls, 60 research-only token assessments, no wallet
+signing.
+
+https://github.com/tinybankroll/birdeye-risk-radar
 
 @birdeye_data #BirdeyeAPI
 
 ## Submission Blockers
 
-- GitHub repo: create `tinybankroll/birdeye-risk-radar`, then push this local repo.
 - X post link: publish the draft from the controlled account, then record the URL.
 - Superteam Earn identity: submit through the listing manually or provide an agent API key and human payout-claim path.
 - Optional stronger scoring: upgrade or replace the Birdeye key if `/defi/token_security` access is required before submission.
