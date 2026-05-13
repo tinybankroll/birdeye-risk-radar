@@ -1,10 +1,11 @@
 # Winner Benchmark
 
-Status: submission paused.
+Status: local product surface built; submission paused until public link or walkthrough exists.
 
-Decision: Birdeye Risk Radar is not ready for Sprint 4 submission as a CLI/report
-packet. Prior winners shipped public product surfaces with immediate utility,
-clear positioning, and stronger presentation.
+Decision: Birdeye Risk Radar has moved beyond the CLI/report packet, but it is
+not ready for Sprint 4 submission until the static app is reviewer-visible.
+Prior winners shipped public product surfaces with immediate utility, clear
+positioning, and stronger presentation.
 
 ## Sources Checked
 
@@ -40,7 +41,7 @@ The product should answer three questions quickly:
 
 ## Required Before Submission
 
-- Build a public web UI, not just a CLI report.
+- Build a public web UI, not just a CLI report. Local static UI exists in `index.html`.
 - Show live cards for token candidates with:
   - price,
   - liquidity,
@@ -58,13 +59,13 @@ The product should answer three questions quickly:
 
 ## Technical Upgrade Plan
 
-1. Convert the repo to a small web app.
-2. Reuse `birdeye-radar.jsonl` as seed data for static demo mode.
+1. Convert the repo to a small web app. Done locally with static HTML/CSS/JS.
+2. Reuse `birdeye-radar.jsonl` as seed data for static demo mode. Done through `tools/build_demo_data.py`.
 3. Add live refresh through `tools/birdeye_radar.py` or a small API endpoint when `BIRDEYE_API_KEY` is available.
-4. Render summary metrics: total assessed, reject/research/watch counts, missing security count, strongest candidates.
-5. Render token cards with stable risk labels and copyable token addresses.
-6. Render token detail pages or expandable rows with the exact scoring reasons.
-7. Add presentation polish: product name, concise thesis, endpoint disclosure, not-financial-advice safety note.
+4. Render summary metrics: total assessed, reject/research/watch counts, missing security count, strongest candidates. Done.
+5. Render token cards with stable risk labels and copyable token addresses. Partially done; addresses are visible and Birdeye links are present.
+6. Render token detail pages or expandable rows with the exact scoring reasons. Done as a selected-token detail panel.
+7. Add presentation polish: product name, concise thesis, endpoint disclosure, not-financial-advice safety note. Partially done.
 8. Re-run live evidence after UI exists.
 9. Update submission copy and X draft to show the web app, not the CLI.
 

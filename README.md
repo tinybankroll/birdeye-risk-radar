@@ -9,26 +9,42 @@ stay research-only.
 
 ## Status
 
-Not submission-ready.
+Local product surface built. Not submitted yet.
 
-After reviewing prior Birdeye Sprint winners, the current CLI/report packet is
-below the winner bar. Previous winners shipped public product surfaces with
-live dashboards, clear workflows, alerts or autopsies, and strong presentation.
-
-Next target: build a public web UI over the existing live evidence and only then
-publish the X post or submit to Superteam.
+After reviewing prior Birdeye Sprint winners, the original CLI/report packet was
+below the winner bar. The repo now includes a static token-triage desk over the
+captured live evidence. The remaining submission gate is public availability:
+publish the app or walkthrough, then publish the X post and submit to Superteam.
 
 ## Evidence
 
 - `birdeye-radar.md`: live report from the qualification run.
 - `birdeye-radar.jsonl`: evidence log with 50 successful Birdeye calls and
   60 token assessments.
+- `index.html`, `styles.css`, `app.js`, `radar-data.js`: static demo desk
+  backed by the live evidence log.
 - `SUBMISSION.md`: prepared Superteam submission fields and X post draft.
 - `WINNER_BENCHMARK.md`: previous-winner benchmark and revised upgrade plan.
 
 ## Run
 
-Fixture mode:
+Static demo:
+
+```bash
+python3 tools/build_demo_data.py
+python3 -m http.server 8787
+```
+
+Open `http://127.0.0.1:8787/`.
+
+Validation:
+
+```bash
+python3 tools/build_demo_data.py --check
+node --check app.js
+```
+
+Radar fixture mode:
 
 ```bash
 python3 tools/birdeye_radar.py --self-test
@@ -57,5 +73,5 @@ python3 tools/birdeye_radar.py \
 
 ## Submission Gate
 
-Do not submit this project until it has a public working app URL or a strong
-walkthrough demo. The current repo proves data access, not product readiness.
+Do not submit this project until the static app is pushed to a reviewer-visible
+URL or paired with a strong walkthrough demo.

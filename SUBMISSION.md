@@ -1,11 +1,10 @@
 # Birdeye Risk Radar Submission Draft
 
-Status: not ready; submission paused.
+Status: local app built; submission paused until the app or walkthrough is public.
 
-Reason: prior Birdeye Sprint winners shipped public product experiences, while
-this packet is still a CLI plus evidence report. Do not publish the X post or
-submit to Superteam until the standalone project has a working app or strong
-walkthrough demo.
+Reason: prior Birdeye Sprint winners shipped public product experiences. This
+repo now has a local static token-triage desk backed by live evidence, but the
+reviewer-facing URL and X post are not published yet.
 
 ## Listing
 
@@ -40,6 +39,8 @@ data is unavailable.
 - `python3 tools/birdeye_radar.py --self-test` passes with deterministic fixture data.
 - `birdeye-radar.jsonl` records live mode, 50 successful calls, and 60 token assessments.
 - `birdeye-radar.md` records the `/defi/token_security` HTTP 401 package-permission blocker and keeps all candidates research-only.
+- `index.html`, `styles.css`, `app.js`, and `radar-data.js` render a local token-triage desk from the live JSONL evidence.
+- `python3 tools/build_demo_data.py --check` and `node --check app.js` pass.
 - `WINNER_BENCHMARK.md` records the previous-winner benchmark and revised plan.
 
 ## Ready Submission Fields
@@ -54,7 +55,7 @@ https://github.com/tinybankroll/birdeye-risk-radar
 
 X progress post link:
 
-Blocked. Do not publish until the public app or walkthrough is ready.
+Blocked. Do not publish until the static app or walkthrough is public.
 
 Endpoint summary:
 
@@ -89,8 +90,8 @@ https://github.com/tinybankroll/birdeye-risk-radar
 
 ## Submission Blockers
 
-- Product readiness: build public app or walkthrough demo before submission.
-- X post link: publish only after the public app or walkthrough is ready.
+- Public availability: push/deploy the static app or record a walkthrough demo.
+- X post link: publish only after the static app or walkthrough is reviewer-visible.
 - Superteam Earn identity: submit through the listing manually or provide an agent API key and human payout-claim path.
 - Optional stronger scoring: upgrade or replace the Birdeye key if `/defi/token_security` access is required before submission.
 

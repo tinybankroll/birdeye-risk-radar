@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Birdeye Risk Radar</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true">BRR</div>
+      <div class="title-block">
+        <p class="eyebrow">Birdeye Risk Radar</p>
+        <h1>Token triage desk</h1>
+        <p id="runLine" class="run-line">Loading radar evidence.</p>
+      </div>
+      <div class="mode-badge">
+        <span class="mode-dot"></span>
+        <span id="modeLabel">Demo</span>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <section id="summaryCards" class="summary-grid" aria-label="Run summary"></section>
+
+      <section class="desk-grid">
+        <aside class="control-panel" aria-label="Radar controls">
+          <div class="control-group">
+            <label for="searchInput">Search</label>
+            <input id="searchInput" type="search" autocomplete="off" placeholder="Symbol, name, or mint">
+          </div>
+
+          <div class="control-group">
+            <span class="control-label">Verdict</span>
+            <div id="classificationFilters" class="segmented-control" role="tablist" aria-label="Classification filter"></div>
+          </div>
+
+          <div class="control-group">
+            <span class="control-label">Source</span>
+            <div id="sourceFilters" class="segmented-control" role="tablist" aria-label="Source filter"></div>
+          </div>
+
+          <div class="control-group">
+            <label for="warningFilter">Risk marker</label>
+            <select id="warningFilter">
+              <option value="all">Any marker</option>
+              <option value="missing-security-data">Missing security data</option>
+              <option value="liquidity-below">Low liquidity</option>
+              <option value="not-in-trending-sample">Not trending</option>
+            </select>
+          </div>
+
+          <div class="control-group">
+            <label for="sortSelect">Sort</label>
+            <select id="sortSelect">
+              <option value="volume">24h volume</option>
+              <option value="liquidity">Liquidity</option>
+              <option value="symbol">Symbol</option>
+              <option value="warnings">Warnings</option>
+            </select>
+          </div>
+        </aside>
+
+        <section class="token-board" aria-label="Token candidates">
+          <div class="board-head">
+            <div>
+              <p class="eyebrow">Candidate feed</p>
+              <h2 id="resultCount">0 tokens</h2>
+            </div>
+            <p id="boardNote" class="board-note">Research-only output.</p>
+          </div>
+          <div id="tokenGrid" class="token-grid"></div>
+        </section>
+
+        <aside id="detailPanel" class="detail-panel" aria-label="Selected token detail"></aside>
+      </section>
+
+      <section id="endpointStrip" class="endpoint-strip" aria-label="Endpoint coverage"></section>
+    </main>
+
+    <script src="radar-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
