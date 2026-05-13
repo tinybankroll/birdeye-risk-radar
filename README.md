@@ -9,12 +9,16 @@ stay research-only.
 
 ## Status
 
-Local product surface built. Not submitted yet.
+Public preview available. Not submitted yet.
 
 After reviewing prior Birdeye Sprint winners, the original CLI/report packet was
 below the winner bar. The repo now includes a static token-triage desk over the
-captured live evidence. The remaining submission gate is public availability:
-publish the app or walkthrough, then publish the X post and submit to Superteam.
+captured live evidence. The static app is pushed to the public repository and
+can be reviewed through HTMLPreview:
+
+https://htmlpreview.github.io/?https://github.com/tinybankroll/birdeye-risk-radar/blob/main/index.html
+
+The remaining submission gates are the X post and Superteam submission identity.
 
 ## Evidence
 
@@ -73,5 +77,6 @@ python3 tools/birdeye_radar.py \
 
 ## Submission Gate
 
-Do not submit this project until the static app is pushed to a reviewer-visible
-URL or paired with a strong walkthrough demo.
+The static app is reviewer-visible through HTMLPreview. GitHub Pages is still
+preferred, but enabling Pages requires owner/admin permissions not available to
+the current local `gh` token.

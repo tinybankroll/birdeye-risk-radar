@@ -1,10 +1,11 @@
 # Birdeye Risk Radar Submission Draft
 
-Status: local app built; submission paused until the app or walkthrough is public.
+Status: public app preview ready; submission paused until X and Superteam identity are ready.
 
 Reason: prior Birdeye Sprint winners shipped public product experiences. This
-repo now has a local static token-triage desk backed by live evidence, but the
-reviewer-facing URL and X post are not published yet.
+repo now has a static token-triage desk backed by live evidence, pushed to a
+public repository, and verified through an HTMLPreview URL. The X post and
+Superteam submission are not published yet.
 
 ## Listing
 
@@ -51,6 +52,10 @@ Birdeye Risk Radar
 
 Public project link:
 
+https://htmlpreview.github.io/?https://github.com/tinybankroll/birdeye-risk-radar/blob/main/index.html
+
+Source:
+
 https://github.com/tinybankroll/birdeye-risk-radar
 
 X progress post link:
@@ -90,9 +95,9 @@ https://github.com/tinybankroll/birdeye-risk-radar
 
 ## Submission Blockers
 
-- Public availability: push/deploy the static app or record a walkthrough demo.
-- X post link: publish only after the static app or walkthrough is reviewer-visible.
+- X post link: publish from a controlled account using the public preview URL.
 - Superteam Earn identity: submit through the listing manually or provide an agent API key and human payout-claim path.
+- GitHub Pages: optional preferred app URL, blocked because the current `gh` token has `READ` permission on `tinybankroll/birdeye-risk-radar` and cannot enable Pages.
 - Optional stronger scoring: upgrade or replace the Birdeye key if `/defi/token_security` access is required before submission.
 
 ## Revised Submission Requirement
