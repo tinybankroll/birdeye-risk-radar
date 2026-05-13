@@ -1,10 +1,11 @@
 # Birdeye Risk Radar Submission Draft
 
-Status: repository pushed; X/Superteam submission pending.
+Status: not ready; submission paused.
 
-Reason: Superteam should see the standalone project only, not the operating
-workspace that produced it. This packet contains the scanner, live evidence,
-and submission copy without wallet files or operating-state files.
+Reason: prior Birdeye Sprint winners shipped public product experiences, while
+this packet is still a CLI plus evidence report. Do not publish the X post or
+submit to Superteam until the standalone project has a working app or strong
+walkthrough demo.
 
 ## Listing
 
@@ -39,6 +40,7 @@ data is unavailable.
 - `python3 tools/birdeye_radar.py --self-test` passes with deterministic fixture data.
 - `birdeye-radar.jsonl` records live mode, 50 successful calls, and 60 token assessments.
 - `birdeye-radar.md` records the `/defi/token_security` HTTP 401 package-permission blocker and keeps all candidates research-only.
+- `WINNER_BENCHMARK.md` records the previous-winner benchmark and revised plan.
 
 ## Ready Submission Fields
 
@@ -52,7 +54,7 @@ https://github.com/tinybankroll/birdeye-risk-radar
 
 X progress post link:
 
-Blocked until the prepared post is published from the controlled X account.
+Blocked. Do not publish until the public app or walkthrough is ready.
 
 Endpoint summary:
 
@@ -72,6 +74,9 @@ loaded, no transaction was built, and no trade recommendation was emitted.
 
 ## X Post Draft
 
+Do not post this draft yet. It is retained as a placeholder for the future
+product launch after the web app exists.
+
 Built Birdeye Risk Radar for Birdeye Data Sprint 4: a read-only Solana
 token-risk scanner.
 
@@ -84,9 +89,16 @@ https://github.com/tinybankroll/birdeye-risk-radar
 
 ## Submission Blockers
 
-- X post link: publish the draft from the controlled account, then record the URL.
+- Product readiness: build public app or walkthrough demo before submission.
+- X post link: publish only after the public app or walkthrough is ready.
 - Superteam Earn identity: submit through the listing manually or provide an agent API key and human payout-claim path.
 - Optional stronger scoring: upgrade or replace the Birdeye key if `/defi/token_security` access is required before submission.
+
+## Revised Submission Requirement
+
+The final submission should point reviewers to a public app that shows token
+triage cards, verdict explanations, endpoint coverage, and a demo mode backed by
+the captured live evidence.
 
 ## Risk Statement
 
